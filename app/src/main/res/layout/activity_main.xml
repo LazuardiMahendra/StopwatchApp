@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <me.tankery.lib.circularseekbar.CircularSeekBar
+        android:id="@+id/cs_main"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="20dp"
+        app:circle_stroke_width="10sdp"
+        app:circle_style="round"
+        app:cs_circle_color="#b1cdbe"
+        app:cs_circle_fill="#e8f2ed"
+        app:cs_circle_x_radius="0dp"
+        app:cs_circle_y_radius="0dp"
+        app:cs_disbale_pointer="false"
+        app:cs_disbale_progress_glow="true"
+        app:cs_lock_enable="true"
+        app:cs_maintain_equal_circle="true"
+        app:cs_move_outside_circle="true"
+        app:cs_negative_enabled="false"
+        app:cs_pointer_color="#319655"
+        app:cs_pointer_halo_color="@color/design_default_color_on_primary"
+        app:cs_pointer_stroke_width="20dp"
+        app:cs_use_custom_radii="false"
+        app:cs_progress_color="#319655"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
