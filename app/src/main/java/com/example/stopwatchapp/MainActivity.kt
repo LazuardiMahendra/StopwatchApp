@@ -22,13 +22,11 @@ class MainActivity : AppCompatActivity() {
                 progress: Float,
                 fromUser: Boolean
             ) {
-                TODO("Not yet implemented")
 
 
             }
 
             override fun onStartTrackingTouch(seekBar: CircularSeekBar?) {
-                TODO("Not yet implemented")
             }
 
             override fun onStopTrackingTouch(seekBar: CircularSeekBar?) {
