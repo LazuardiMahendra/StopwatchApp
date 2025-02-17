@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".StopwatchActivity">
+
+    <me.tankery.lib.circularseekbar.CircularSeekBar
+        android:id="@+id/cs_main"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="60dp"
+        app:cs_circle_color="#b1cdbe"
+        app:cs_circle_fill="#e8f2ed"
+        app:cs_circle_progress_color="#319655"
+        app:cs_circle_stroke_width="10dp"
+        app:cs_circle_style="round"
+        app:cs_circle_x_radius="0dp"
+        app:cs_circle_y_radius="0dp"
+        app:cs_disable_pointer="false"
+        app:cs_disable_progress_glow="true"
+        app:cs_lock_enabled="true"
+        app:cs_maintain_equal_circle="true"
+        app:cs_move_outside_circle="true"
+        app:cs_negative_enabled="false"
+        app:cs_pointer_alpha_ontouch="5"
+        app:cs_pointer_color="#319655"
+        app:cs_pointer_halo_color="#ff0000"
+        app:cs_pointer_stroke_width="20dp"
+        app:cs_use_custom_radii="false"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="@+id/cs_main"
+        app:layout_constraintEnd_toEndOf="@+id/cs_main"
+        app:layout_constraintStart_toStartOf="@+id/cs_main"
+        app:layout_constraintTop_toTopOf="@+id/cs_main">
+
+        <TextView
+            android:id="@+id/tv_hour"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="00"
+            android:textSize="30sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=" : "
+            android:textSize="30sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tv_minute"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="00"
+            android:textSize="30sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=" : "
+            android:textSize="30sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tv_second"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="00"
+            android:textSize="30sp" />
+
+
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
